@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+  <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>#1 Java script</title> 
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    
+  }
+  h1{
+    background-color: burlywood;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-size: xxx-large;
+  }
+
+  .box{
+  
+    width: 500px;
+    /* margin: auto; */
+    display: flex;
+    border-style: solid;
+    height: 250px;
+    border-radius: 10px;
+    flex-direction: column
+     
+}
+
+
+.num1{
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  /* align-content: center; */
+  justify-content: space-evenly;
+}
+
+  
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+  <h1>#1 | Calculate Two numbers </h1>
+  <div class="box">
+  <div class="num1">
+    <label>Enter First Number</label>
+    <input type="text" id="n1"> 
+  </div> 
+  <div class="num1">
+    <label>Enter Second Number</label>
+    <input type="text" id="n2"> <br>
+    
+  </div>
+  <input type="button" value="ADD" onclick="ADD()" style="border-radius: 7px; background-color: burlywood">
+</div>
+  <script>
+    function ADD() {
+      var n1 = parseInt(document.getElementById("n1").value);
+      var n2 = parseInt(document.getElementById("n2").value);
+      var sum = n1 + n2;
+      alert(sum);
+
+    }
+  </script>
+
+
+</body>
+
+  </html>
